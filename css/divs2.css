@@ -164,21 +164,33 @@ section#servicos h2{
 	font-size: 32px;
 	text-align: center;
 }
+
 .services{
 	max-width: 960px;
 	margin: 30px auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
         Align-content: center;
-	transform: translate3d(100px, 0,0);
+	-webkit-transform: translate3d(100px, 0,0);
+	        transform: translate3d(100px, 0,0);
 	opacity: 0;
+	-webkit-transition: all 500ms cubic-bezier(0.000, 1.650, 1.000, 0.925);
+	-o-transition: all 500ms cubic-bezier(0.000, 1.650, 1.000, 0.925);
 	transition: all 500ms cubic-bezier(0.000, 1.650, 1.000, 0.925);
 	margin-bottom: 120px;
 }
 
 .services.active{
-	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	        transform: translate3d(0,0,0);
+	-webkit-transition: all 500ms cubic-bezier(0.550, 0.085, 0.680, 0.530);
+	-o-transition: all 500ms cubic-bezier(0.550, 0.085, 0.680, 0.530);
 	transition: all 500ms cubic-bezier(0.550, 0.085, 0.680, 0.530);
 	opacity: 1;
 }

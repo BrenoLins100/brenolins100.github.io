@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/divs2.css">
+    <title>Document</title>
+    <script>
+        function ativaMenu(){
+
+            var btn = document.querySelector(".btn"); 
+
+            if(btn.className === "btn"){
+                btn.className += " active";
+            }
+            else{
+                btn.className = ("btn");
+            }
+            
+        }
+
+        function ativaMobile(){
+
+            var menu = document.querySelector('.menu-mobile');
+            
+            if(menu.className === "menu-mobile"){
+                menu.className += " active";
+            }
+            else{
+                menu.className = ("menu-mobile");
+            }
+        }
+
+
+    </script>
+
+
+<script>
+
+    function scrollAppear(){
+        
+        var root = document.querySelector('html');
+
+        var menu = document.querySelector('.menu');
+
+        var introPosition = root.getBoundingClientRect().top;
+        
+        if (introPosition <  0 ){
+            menu.classList.add('active');
+        }
+        else {
+            menu.classList.remove('active');
+        }
+    }
+
+    window.addEventListener('scroll',scrollAppear);    
+    window.addEventListener('scroll', alerta);
+
+    window.addEventListener('scroll', ativaDiv);
+
+    function alerta(){
+        var y = window.scrollY;
+        var menu = document.querySelector('.menu');
+        if(y > 10){
+            menu.classList.add('active');
+        }else{
+            menu.classList.remove('active');
+        }
+    }
+
+    function ativaDiv(){
+        var alvo = document.querySelectorAll('.services');
+        var topoJanela = window.scrollY + (window.innerHeight * 0.75);
+        alvo.forEach(function(elemento){
+            if(topoJanela > elemento.offsetTop){
+                elemento.classList.add('active');
+            }
+            else{
+                elemento.classList.remove('active');
+            }
+        
+        })
+    }
+
+</script>
+
+
+
+</head>
+<body>
+   
+    <header>
+        <nav class="menu">
+            <div class="btn" onclick="ativaMenu();">
+                <span onclick="ativaMobile();"></span>
+            </div>
+            <div class="logo">
+                <h1>FROST</h1>
+            </div>
+            <div class="itens">
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="#servicos">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#sobre">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="icones">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <div class="services">
+            <div class="col">
+                <img src="https://www.flaticon.com/premium-icon/icons/svg/691/691888.svg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed tincidunt quam. Duis aliquam ullamcorper ipsum. Nunc congue eu</p>
+            </div>
+            <div class="col">
+                <img src="https://image.flaticon.com/icons/svg/977/977597.svg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed tincidunt quam. Duis aliquam ullamcorper ipsum. Nunc congue eu </p>
+            </div>
+            <div class="col">
+                <img src="https://www.flaticon.com/premium-icon/icons/svg/401/401253.svg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed tincidunt quam. Duis aliquam ullamcorper ipsum. Nunc congue eu </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="sobre" class="sobre services">
+        <h3>Sobre</h3>
+        <div class="container-sobre">
+            <div class="texto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus finibus  ligula vitae faucibus. In consequat rhoncus efficitur. Mauris sit amet lacinia nunc. Vestibulum interdum, sapien sit amet facilisis pretium, neque erat convallis lectus, eu condimentum sapien quam id justo. Maecenas fermentum, diam eget tincidunt aliquam. <br> <br> odio augue pulvinar sapien, quis sodales felis quam vitae ex. Aenean ut porta erat. Nullam vulputate et ex ac dignissim. Etiam sit amet pulvinar velit, et dignissim urna. Ut cursus, quam vestibulum accumsan porttitor, nunc dui pretium neque, in varius felis augue vel augue.</p>
+            </div>
+            <div class="img-turtle">
+                <img src="https://image.flaticon.com/icons/svg/1285/1285185.svg" alt="leonardo-turtle">
+            </div>
+        </div>
+    </section>  
+
+   <footer class="footer">
+       <span>Desenvolvido por Breno Lins/</span>
+       <a href="https://br.freepik.com/fotos-gratis/lago-nas-montanhas_1286252.htm">Imagem do header</a>
+   </footer>
+    
+</body>
+</html>

@@ -219,7 +219,7 @@ section#servicos h2{
 	.services{
 		flex-direction: column;
 		align-content: center;
-		margin: 1em;
+		margin: 1em auto;
 	}
 }
 

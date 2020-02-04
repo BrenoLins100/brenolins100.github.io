@@ -243,7 +243,12 @@ section#servicos h2{
 	margin: 30px auto;
 	align-items: center;
 	max-width: 960px;
-	flex-wrap: wrap;
+}
+
+@media screen and (max-width:768px){
+	.container-sobre{
+		flex-wrap: wrap;	
+	}
 }
 
 .container-sobre .img-turtle,

@@ -242,8 +242,8 @@ section#servicos h2{
 	display: flex;
 	margin: 30px auto;
 	align-items: center;
-	max-width: 960px!important;
-	flex-wrap: nowrap;
+	max-width: 960px;
+	flex-wrap: wrap;
 }
 
 .container-sobre .img-turtle,

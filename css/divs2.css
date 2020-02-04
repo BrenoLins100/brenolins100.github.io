@@ -276,6 +276,7 @@ section#servicos h2{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+        Flex-wrap: wrap;
 }
 
 .footer span{

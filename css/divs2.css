@@ -245,7 +245,7 @@ section#servicos h2{
 	max-width: 960px;
 }
 
-@media screen and (max-width:768px){
+@media (max-width:768px){
 	.container-sobre{
 		flex-wrap: wrap;	
 	}

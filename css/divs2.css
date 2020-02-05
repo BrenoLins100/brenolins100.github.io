@@ -1,7 +1,8 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+        Box-sizing: border-box;
+        -webkit-Box-sizing: border-box;
 	font-family: 'Rubik', sans-serif;
 }
 .m3{
@@ -203,7 +204,9 @@ section#servicos h2{
 	justify-content: center;
 	align-items: center;
 	padding: 30px;
-	flex: 1 0 230px;
+	-webkit-box-flex: 1;
+        -ms-flex: 1 0 230px;
+        flex: 1 0 230px;
 	max-width: 300px;
 	border-radius: 10px;
 	transition: all 700ms;

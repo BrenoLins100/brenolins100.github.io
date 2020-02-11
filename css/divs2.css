@@ -211,7 +211,7 @@ section#servicos h2{
 	-webkit-transition: all 500ms cubic-bezier(0.550, 0.085, 0.680, 0.530);
 	transition: all 500ms cubic-bezier(0.550, 0.085, 0.680, 0.530);
 	opacity: 1;
-        margin: 30px auto;
+        margin: 30px;
         Align-content: center;
 }
 
@@ -270,7 +270,7 @@ section#servicos h2{
 		        flex-direction: column;
 		-ms-flex-line-pack: center;
 		    align-content: center;
-		margin: 1em auto;
+		margin: 10px;
 	}
 }
 

@@ -1,0 +1,94 @@
+/*Menu responsivo*/
+@media(min-width: 768px){
+    .menu-mobile{
+        display: none;
+    }
+}
+
+/*First Break-Point = 768px*/
+@media(max-width: 768px){
+
+    /*Links do menu*/
+
+    .links ul{
+        display: none;
+    }
+    
+    /*Container dos produtos*/  
+    .container{
+        max-width: 500px;
+    }
+    .container h2{  
+        text-align: center;
+    }
+    .produtos{
+        flex-wrap: wrap;
+    }
+    .hamburg{
+        display: block;
+    }
+}
+
+
+@media(min-width: 768px){
+
+    /*Card dos produtos*/
+    
+    .card{
+        flex: 0 0 20%;
+    }
+
+    /*Card promoções*/
+    .promo{
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    /*Card das Lojas*/
+    .card-loja{
+        flex: 0 0 33.33333%;
+    }
+    .card-loja.meio{
+        margin-top: -30px;
+    }
+}
+
+/*Ipad*/
+
+@media(min-width: 768px) and (max-width:768px){
+    .container{
+        max-width: 700px;
+    }
+    .card{
+        flex: 0 0 19%;
+    }
+}
+
+/*Second Break-Point = 960px*/
+
+
+@media(max-width: 960px){
+
+    /*Alinha texto container*/
+
+    .promocoes h2{
+        text-align: center;
+    }
+    
+    /*Alinha texto sobre*/
+    .sobre h2{
+        text-align: center;
+    }
+    .texto-sobre{
+        width: 80%;
+    }
+    
+    /*Alinha texto das Lojas */
+    .lojas h2{
+        text-align: center;
+    }
+    .card-loja{
+        flex: 0 0 80%;
+    }
+}
+

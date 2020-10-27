@@ -13,6 +13,7 @@ html{
 body{
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
+    max-width: 2000px;
 }
 .menu{
     margin: 60px 20px;
@@ -139,13 +140,13 @@ body{
 #home:before{
     content: '';
     display: block;
-    width: 80%;
+    max-width: 80%;
     margin: 20px auto;
     height: 2px;
     border-bottom: 1px solid #8d8d8d;
 }
 .container{
-    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
     padding-bottom: 20px;
 }
@@ -219,11 +220,11 @@ body{
 /*Promoções*/
 .promocoes{
     margin: 90px auto;
-    max-width: 960px;
+    max-width: 80%;
 }
 
 .promocoes h2{
-    margin: 30px 10px;
+    margin: 30px -10px;
     font-size: 22px;
     line-height: 25,83px;
     font-weight: 500;
@@ -235,12 +236,12 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 30px 0;
+    margin: 30px 0px;
 }
 
 .promo{
     flex: 0 0 auto;
-    width: 90%;
+    width: 100%;
 }
 
 .prod img{
@@ -250,16 +251,16 @@ body{
 
 .prod{
     background: #F0F4F8;
-    margin: 10px;
+    margin-right: 20px;
 }
 /*Sobre a Acme*/
 .sobre{
     margin: 110px auto;
-    max-width: 960px;
+    max-width: 80%;
 }
 
 .sobre h2{
-    margin: 30px 10px;
+    margin: 30px -10px;
     font-size: 22px;
     line-height: 25,83px;
     font-weight: 500;
@@ -284,11 +285,11 @@ body{
 /*Lojas*/
 .lojas{
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 80%;
     padding-bottom: 80px;
 }
 .lojas h2{
-    margin: 30px 10px;
+    margin: 30px -10px;
     font-size: 22px;
     line-height: 25,83px;
     font-weight: 500;
@@ -299,6 +300,10 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.card-loja{
+    flex: 0 0 auto;
+    width: 100%;
 }
 .infos-loja{
     background: #F0F4F8;

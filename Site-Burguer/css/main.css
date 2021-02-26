@@ -382,3 +382,141 @@ a.add{
     border-color: #ff3939;
     transition: all 0.8s;
 }
+
+/*Treding burgers*/
+
+.container-treding{
+    padding: 40px;
+}
+
+.container-treding h4{
+    font-size: 55px;
+}
+
+.treding-burger{
+    background: #ffdac1;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.treding-burger img{
+    max-width: 100%;
+    width: 130px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.row-dessert .treding-burger img{
+    width: 90px;
+    height: 90px;
+}
+
+.treding-burger h3{
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.treding-burger p{
+    color: #515050;
+    font-weight: 400;
+}
+
+.treding-burger button.btn-price{
+    position: static;
+    transform: none;
+    left: 0;
+    top: 0;
+    display: block;
+    margin: 10px 0;
+}
+
+h4.des-h4{
+    margin-top: 40px;
+}
+
+/*Testimonials*/
+.testimonials{
+    margin-top: 60px;
+}
+
+/*Images Highlight*/
+
+.high-img{
+    margin: 0 0.5px;
+}
+
+
+.high-img img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Footer*/
+
+.footer-content{
+    padding: 40px;
+    margin: 40px 0;
+}
+
+.footer-content h5{
+    font-size: 25px;
+}
+
+/*About us contact us*/
+
+.about-us,
+.street,
+.tel,
+.email,
+.email2{
+    color: #515050;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/*Subscribe*/
+
+.subs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sub-email,
+.btn-sub{
+    border: 0;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 10px 0;
+}
+
+.sub-email{
+    background: #f0eeee;
+    display: block;
+    padding: 20px;
+    outline: none;
+}
+
+.btn-sub{
+    display: block;
+    background: #ff3939;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    outline: none;
+}
+
+p.last-offer{
+    text-align: center;
+    color: #515050;
+    
+}
+
+.location{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,384 @@
+/*Google fonts import*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap');
+
+/*CSS * RESET*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+/*Grid system tamanhos unicos de coluna */
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div[class*=col]{
+    width: 100%;
+    position: relative;
+}
+
+.content{
+    background: cadetblue;
+    margin: 3px;
+    padding: 30px;
+}
+
+@media(min-width: 768px){
+    .col-1{
+        flex-basis: 8.3333%;
+    }
+    .col-2{
+        flex-basis: 16.6666%;
+    }
+    .col-3{
+        flex-basis: 25%;
+    }
+    .col-4{
+        flex-basis: 33.3333%;
+    }
+    .col-5{
+        flex-basis:  41.6666%;
+    }
+    .col-6{
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+    .col-7{
+        flex-basis: 58.3333%;
+    }
+    .col-8{
+        flex-basis: 66.6666%;
+    }
+    .col-9{
+        flex-basis:  75%;
+    }
+    .col-10{
+        flex-basis:  83.3333%;
+    }
+    .col-11{
+        flex-basis: 91.6666%;
+    }
+    .col-12{
+        flex-basis: 100%;
+    }
+}
+
+
+/*Header*/
+
+.main-header{
+    min-height: 80vh;
+    background: url('../img/burger-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/*Nav*/
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 30px 0;
+}
+
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu ul li{
+    margin: 20px;
+    list-style: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+
+/*Burger text*/
+
+.burger-text{
+    text-align: center;
+}
+
+.p-crispy{
+    color: #8d8d8d;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.p-crispy:before{
+    content: 'CRISPY';
+    color: #ff3939;
+}
+
+.p-burger{
+    color: #ffffff;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+/*About us*/
+.container-about{
+    max-width: 960px;
+    margin: 60px auto;
+    align-items: center;
+}
+
+.burger-img img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.burger-img,
+.delivery-text{
+    margin: 20px;
+}
+
+.b-about{
+    border: none;
+    color: #ffffff;
+    background: #000000;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 3px;
+    width: 100px;
+}
+
+.delivery-text .delivery-h1{
+    font-size: 50px;
+    line-height: 1.4;
+}
+
+.delivery-text .delivery-h1{
+    font-size: 45px;
+}
+
+.delivery-text .delivery-p{
+    color: #545454;
+    line-height: 1.7;
+}
+
+
+/*Special offers*/
+
+.special-offers{
+    margin: 60px 0;
+}
+
+.h2-offers{
+    font-size: 60px;
+    margin: 30px;
+}
+
+.row-special-offers{
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 40px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.ham{
+    position: relative;
+}
+
+.ham button.new{
+    border: none;
+    color: #ffffff;
+    background: #ff3939;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 3px;
+    width: 110px;
+    margin-left: 20px;
+}
+
+.ham-img{
+    margin: 10px;
+    max-width: 100%;
+}
+
+.ham .p-ham{
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+p.ham-desc{
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 1.8;
+    color: #545454;
+    font-size: 17px;
+}
+
+.buttons-grid{
+    margin-left: 20px;
+    display: flex;
+}
+
+.buttons-grid button{
+    color: #545454;
+    background: #ffffff;
+    border: 2px solid #f4f4f4;
+    font-weight: 700;
+    border-radius: 30px;
+    padding: 8px;
+    width: 120px;
+    margin-right: 20px;
+}
+
+.ham-price{
+    display: flex;
+    margin: 30px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ham-price h2{
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 40px;
+}
+
+
+.ham-price button{
+    background: #000000;
+    font-weight: 600;
+    color: #FFFFFF;
+    border-radius: 30px;
+    width: 175px;
+    height: 40px;
+    border: 0;
+    margin-right: 20px;
+}
+
+.offer-card{
+    background: #fbf8f6;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 30px;
+    min-width: 200px;
+    position: relative;
+    min-height: 300px;
+}
+
+.offer-card img{
+    max-width: 100%;
+    width: 110px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.offer-card p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.btn-price{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    bottom: 70px;
+    background: #ff3939;
+    border: 0;
+    color: #ffffff;
+    padding: 2px 15px;
+    border-radius: 30px;
+    width: auto;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+a.add{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    bottom: 0px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000000;
+}
+
+.container-discount{
+    background: #191a1d;
+}
+
+.mt-30{
+    margin-top: 30px;
+}
+
+.burger-off img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.burger-desc{
+    margin: 60px 0;
+    padding: 50px;
+}
+
+.burger-desc button.off{
+    background: #ff3939;
+    border: 0;
+    color: #ffffff;
+    padding: 2px 10px;
+    border-radius: 5px;
+    width: auto;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+
+.burger-desc h3{
+    color: #FFFFFF;
+    font-size: 55px;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.burger-desc p{
+    color: #ffffff;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.burger-desc button.see-menu{
+    background: #191a1d;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: 2px solid #FFFFFF;
+    padding: 15px 60px;
+    border-radius: 30px;
+    font-size: 17px;
+    transition: all 0.8s;
+}
+
+.burger-desc button.see-menu:hover{
+    background: #ff3939;
+    border-color: #ff3939;
+    transition: all 0.8s;
+}

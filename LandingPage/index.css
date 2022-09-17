@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2d3436!important;
+}
+
+nav{
+    margin: 30px;
+}
+
+.navbar i{
+    color: #f1c40f;
+    font-size: 30px;
+}
+
+.navbar-brand{
+    color: #f1c40f!important;
+    font-size: 30px!important;
+}
+
+.nav-link{
+    color: #fff!important;
+}
+
+section{
+    padding: 20px;
+}
+
+.meio{
+    margin: 30px;
+}
+
+.tema-link{
+    color: #f1c40f;
+}
+
+.btn-enviar{
+    background: #f1c40f!important;
+}
+
+.imagem-principal{
+    padding: 30px;
+    transition: all 700ms;
+}
+
+.imagem-principal:hover{
+    transform: scale(1.1);
+    transition: all 700ms;
+}
+
+.servicos{
+    margin-top: 80px;
+}
+
+.servicos i{
+    color: #f1c40f;
+    font-size: 70px;
+    text-align: center;
+}
+
+.caixa{
+    background: #2d3436;
+    padding: 20px;
+}
+
+.btn-saiba{
+    background-color: #f1c40f!important;
+    border: 0!important;
+    color: #2d3436!important;
+}
+
+footer{
+    padding: 30px;
+    background: #141414
+}
+
+.footer-itens{
+    margin: 0px 30px 0 30px;
+}
+
+footer p{
+    color: #f1c40f;
+}
+
+.footer-icons i{
+    color: #f1c40f;
+    margin: 10px;
+    font-size: 30px;
+}
